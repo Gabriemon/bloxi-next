@@ -2,6 +2,7 @@
 import { React, useState, setState } from "react";
 import Gender from "./Components/gender";
 import Age from "./Components/age";
+import Product from "./Components/products";
 
 
 function MyComponent ({value, doSomething}) {
@@ -21,12 +22,12 @@ export default function Home() {
   const navigateTo = (where) => {
     setCurrentPage(where)
   }
-
-
+  
   return (
     <div>
       {currentPage === 'Gender' && <Gender setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
-      {currentPage === 'Age' && <Age setCurrentPage={setCurrentPage} currentState={currentState}/>}
+      {currentPage === 'Age' && <Age setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
+      {currentPage === 'Product' && <Product setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
     </div>
   );
 }
