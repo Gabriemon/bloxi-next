@@ -3,6 +3,7 @@ import { React, useState, setState } from "react";
 import Gender from "./Components/gender";
 import Age from "./Components/age";
 import Product from "./Components/products";
+import Delivery from "./Components/delivery";
 
 
 function MyComponent ({value, doSomething}) {
@@ -28,6 +29,7 @@ export default function Home() {
       {currentPage === 'Gender' && <Gender setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
       {currentPage === 'Age' && <Age setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
       {currentPage === 'Product' && <Product setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
+      {currentPage === 'Delivery' && <Delivery setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
     </div>
   );
 }
