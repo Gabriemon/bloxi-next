@@ -15,6 +15,9 @@ export default function Delivery ({ setCurrentPage, currentState, setCurrentStat
                 Voltar
             </button>
         </div>
+
+        <div>{JSON.stringify(currentState)}</div>
+        
         </>
 
         
