@@ -4,6 +4,7 @@ import Gender from "./Components/gender";
 import Age from "./Components/age";
 import Product from "./Components/products";
 import Delivery from "./Components/delivery";
+import Payment from "./Components/pix";
 
 
 function MyComponent ({value, doSomething}) {
@@ -30,6 +31,7 @@ export default function Home() {
       {currentPage === 'Age' && <Age setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
       {currentPage === 'Product' && <Product setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
       {currentPage === 'Delivery' && <Delivery setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
+      {currentPage === 'Payment' && <Payment setCurrentPage={setCurrentPage} currentState={currentState} setCurrentState={setCurrentState}/>}
     </div>
   );
 }
